@@ -1,6 +1,8 @@
+env:
+  - GO111MODULE=on
+
 before:
   hooks:
-    - go mod download
     - go generate ./...
 builds:
   -
@@ -61,5 +63,5 @@ changelog:
 
 release:
   github:
-    owner: vultr
+    owner: ddymko
     name: packer-builder-vultr
