@@ -1,7 +1,7 @@
 name: Nightly Acceptance
-#on:
-#  schedule:
-#    - cron: '0 2 * * *' # run at 2 AM UTC
+on:
+  schedule:
+    - cron: '*/10 * * * *' # run at 2 AM UTC
 
 jobs:
   build:
